@@ -20,7 +20,7 @@ class PostController extends AbstractController
     /**
      * @param PostRepository $postRepository
      * @return JsonResponse
-     * @Route("/pots", name="posts", methods={"GET"})
+     * @Route("/posts", name="posts", methods={"GET"})
      */
     public function getPosts(PostRepository $postRepository) {
         $data = $postRepository->findAll();
